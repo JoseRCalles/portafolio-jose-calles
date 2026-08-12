@@ -5,8 +5,21 @@ export function BentoSection() {
   const projects = [
     {
       id: "PROJ_01",
+      title: "RUTEA — Rastreo & Geolocalización",
+      subtitle: "Mobile Developer | 2026 - Presente ",
+      description: "Aplicación mobile para la consulta de rutas de transporte local mediante geolocalización y APIs de mapas.",
+      bullets: [
+        "Implementé un algoritmo de búsqueda tokenizada multipalabra para mejorar consultas.",
+        "Optimicé la estructura de widgets para mantener interfaces fluidas con mapas."
+      ],
+      tags: ["Flutter", "Dart", "Map APIs", "Geolocalización", "Algoritmos"],
+      gridSpan: "col-span-1 lg:col-span-2 ",
+      colorTheme: "purple",
+    },
+    {
+      id: "PROJ_02",
       title: "PEDILOVO — Logística & E-Commerce",
-      subtitle: "Software Engineer | 2024 – Presente",
+      subtitle: "Software Engineer | 2026 – Presente",
       description: "Plataforma mobile de logística y e-commerce basada en microservicios y API Gateways para separar responsabilidades y facilitar la evolución del sistema.",
       bullets: [
         "Diseñé la arquitectura móvil utilizando Clean Architecture.",
@@ -14,26 +27,13 @@ export function BentoSection() {
         "Organicé código compartido y dependencias mediante un monorepo administrado con Melos."
       ],
       tags: ["Flutter", "Dart", "Python", "FastAPI", "Microservicios", "Supabase", "Melos"],
-      gridSpan: "col-span-1 lg:col-span-2",
-      colorTheme: "purple",
-    },
-    {
-      id: "PROJ_02",
-      title: "RUTEA — Rastreo & Geolocalización",
-      subtitle: "Mobile Developer | 2024",
-      description: "Aplicación mobile para la consulta de rutas de transporte local mediante geolocalización y APIs de mapas.",
-      bullets: [
-        "Implementé un algoritmo de búsqueda tokenizada multipalabra para mejorar consultas.",
-        "Optimicé la estructura de widgets para mantener interfaces fluidas con mapas."
-      ],
-      tags: ["Flutter", "Dart", "Map APIs", "Geolocalización", "Algoritmos"],
       gridSpan: "col-span-1",
       colorTheme: "cyan",
     },
     {
       id: "PROJ_03",
       title: "HIDROFALCÓN — Control de Activos",
-      subtitle: "Full-Stack Developer | 2023",
+      subtitle: "Full-Stack Developer | 2025",
       description: "Plataforma web centralizada para la gestión, asignación y desincorporación de activos de infraestructura pública.",
       bullets: [
         "Automaticé auditorías de bienes, reduciendo en 40% los tiempos manuales.",
@@ -45,9 +45,9 @@ export function BentoSection() {
     },
     {
       id: "PROJ_04",
-      title: "UPTAG — Inventario Médico",
-      subtitle: "Full-Stack Developer | 2022 – 2023",
-      description: "Plataforma para el control de insumos médicos y seguimiento preventivo de existencias en almacenes.",
+      title: "UPTAG — Sistema de Gestión del Comedor",
+      subtitle: "Full-Stack Developer | 2024",
+      description: "Plataforma para el control de Alimentos, ",
       bullets: [
         "Implementé alertas para identificar productos próximos a expirar.",
         "Diseñé bases de datos para mantener la consistencia del stock."

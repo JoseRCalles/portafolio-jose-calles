@@ -14,7 +14,7 @@ export function Hero() {
         {/* Title */}
         <div className="space-y-2">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight text-text-bright leading-none">
-            JOSÉ RAFAEL <br />
+            JOSÉ RAFAEL JUNIOR <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple via-neon-cyan to-neon-green">
               CALLES ANDARA
             </span>
@@ -33,10 +33,6 @@ export function Hero() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <div className="text-xs">
-              <p className="mono-text text-neutral-500 uppercase">LOCATION</p>
-              <p className="font-semibold text-text-bright">Coro, Falcón, Venezuela</p>
-            </div>
           </div>
 
           <div className="flex items-center gap-3 bg-bg-panel/40 p-3 rounded-lg border border-border-retro">
@@ -44,12 +40,6 @@ export function Hero() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-            </div>
-            <div className="text-xs">
-              <p className="mono-text text-neutral-500 uppercase">PHONE</p>
-              <a href="tel:+584128566352" className="font-semibold text-text-bright hover:text-neon-green transition-colors">
-                (+58) 412-8566352
-              </a>
             </div>
           </div>
 
@@ -70,7 +60,7 @@ export function Hero() {
           <div className="flex items-center gap-3 bg-bg-panel/40 p-3 rounded-lg border border-border-retro">
             <div className="text-neon-cyan">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
               </svg>
             </div>
             <div className="text-xs">
