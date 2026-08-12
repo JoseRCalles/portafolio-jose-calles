@@ -1,15 +1,17 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect, lazy, Suspense } from "react";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 gsap.registerPlugin(ScrollToPlugin);
 import { BiosBoot } from "./components/overview/BiosBoot";
 import { Hero } from "./components/overview/Hero";
-import { BioTerminal } from "./components/overview/BioTerminal";
-import { SkillsMatrix } from "./components/skills/SkillsMatrix";
 import { NetworkHardener } from "./components/skills/NetworkHardener";
-import { BentoSection } from "./components/projects/ProjectSection";
 import { ContactPanel } from "./components/contact/ContactPanel";
 import "./App.css";
+
+// Carga perezosa de los módulos pesados
+const BioTerminal = lazy(() => import('./components/overview/BioTerminal'));
+const SkillsMatrix = lazy(() => import('./components/skills/SkillsMatrix'));
+const BentoSection = lazy(() => import('./components/projects/ProjectSection'));
 
 export function App() {
   const [booted, setBooted] = useState(false);
@@ -64,11 +66,13 @@ export function App() {
       {booted && (
         <div className="relative min-h-screen bg-bg-dark text-text-muted flex flex-col items-center overflow-hidden">
           {/* WebGL Retro wireframe grid backdrop */}
+          <Suspense fallback={<div className="text-green-400 font-mono">CARGANDO MÓDULOS...</div>}>
 
-          {/* CRT scanlines and viewport glass borders */}
-          <div className="crt-overlay" />
-          <div className="crt-vignette" />
-          <div className="crt-static" />
+            {/* CRT scanlines and viewport glass borders */}
+            <div className="crt-overlay" />
+            <div className="crt-vignette" />
+            <div className="crt-static" />
+          </Suspense>
 
           {/* Scrolling Single Page Application Containers */}
           <main className="w-full relative z-10 flex flex-col items-center gap-12 pb-32">
