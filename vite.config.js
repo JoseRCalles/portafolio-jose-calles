@@ -11,4 +11,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
 
+  base: '/portafolio-jose-calles/',
+
 })

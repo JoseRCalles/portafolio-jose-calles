@@ -87,7 +87,6 @@ export function ContactPanel() {
               </div>
             </div>
           </div>
-          <span className="text-[10px] mono-text text-neutral-600 mt-3 uppercase tracking-wider">Hover shutter slider to eject write lock</span>
         </div>
 
         {/* Right Side: Guestbook */}
