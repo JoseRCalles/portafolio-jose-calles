@@ -10,4 +10,6 @@ export default defineConfig({
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  base: "https://josercalles.github.io/portafolio-jose-calles/",
+
 })
