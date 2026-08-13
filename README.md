@@ -1,6 +1,3 @@
-# repository-jose-calles
-🖥️ José Calles - Dev Portfolio v4.0 | Portafolio interactivo retro-futurista que emula una secuencia de arranque BIOS y una terminal de consola. Construido con React, GSAP, y Tailwind CSS para destacar proyectos de Arquitectura Backend, Mobile y Ciberseguridad.
-
 # 💻 Portafolio Profesional - José Rafael Calles
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
