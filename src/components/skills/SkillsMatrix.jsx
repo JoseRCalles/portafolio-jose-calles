@@ -45,10 +45,10 @@ export function SkillsMatrix() {
     <div className="w-full max-w-6xl mx-auto py-6">
       <div className="text-center mb-10 space-y-2">
         <h2 className="text-3xl font-black uppercase text-text-bright tracking-wider">
-          SKILL MATRIX RACK
+          RACK DE MÓDULOS DE HARDWARE
         </h2>
         <p className="mono-text text-xs text-neutral-500 uppercase tracking-widest">
-          Hardware modules loaded in the portfolio processor core
+          Módulos de hardware cargados en el procesador central del portafolio
         </p>
       </div>
 

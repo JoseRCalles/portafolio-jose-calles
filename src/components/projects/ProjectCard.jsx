@@ -7,6 +7,7 @@ export function ProjectCard({
   tags = [],
   gridSpan = "col-span-1",
   colorTheme = "purple", // purple, cyan, green, yellow
+  url, // NUEVO: URL opcional para el proyecto
 }) {
   const themeStyles = {
     purple: {
@@ -37,23 +38,31 @@ export function ProjectCard({
 
   const style = themeStyles[colorTheme] || themeStyles.purple;
 
-  return (
-    <div
-      className={`glass-panel p-6 rounded-xl border flex flex-col justify-between transition-all duration-300 bg-bg-panel/20 relative overflow-hidden group ${gridSpan} ${style.border}`}
-    >
+  // Contenido interno de la card (para no repetir código entre <a> y <div>)
+  const CardContent = (
+    <>
       {/* Index Tag */}
-      <div className="absolute top-0 right-0 p-1.5 mono-text text-[9px] text-neutral-600 bg-neutral-900 border-l border-b border-border-retro font-bold">
+      <div className="absolute top-0 right-0 p-1.5 mono-text text-[9px] text-neutral-600 bg-neutral-900 border-l border-b border-border-retro font-bold z-10">
         {id}
       </div>
 
       <div className="space-y-4">
         {/* Header */}
         <div>
-          <span className={`mono-text text-[10px] font-black uppercase tracking-widest ${style.text}`}>
-            {subtitle}
-          </span>
-          <h3 className="text-xl md:text-2xl font-black uppercase text-text-bright tracking-wide group-hover:text-white transition-colors mt-1">
-            {title}
+          <div className="flex gap-4 items-center w-full">
+            <span className={`mono-text text-[10px] font-black uppercase tracking-widest ${style.text}`}>
+              {subtitle}
+            </span>
+            {url && (
+              <span className={`text-xs font-mono font-normal tracking-normal opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${style.text} flex items-center gap-1 `}>
+                <span className="text-sm">↗</span>
+              </span>
+            )}
+          </div>
+          <h3 className="text-xl md:text-2xl font-black uppercase text-text-bright tracking-wide group-hover:text-white transition-colors mt-1 flex items-center justify-between">
+            <span>{title}</span>
+
+            {/* Indicador minimalista "Ir al proyecto" en el header al hacer hover */}
           </h3>
         </div>
 
@@ -87,7 +96,31 @@ export function ProjectCard({
           ))}
         </div>
       )}
+    </>
+  );
+
+  const commonClassName = `glass-panel p-6 rounded-xl border flex flex-col justify-between transition-all duration-300 bg-bg-panel/20 relative overflow-hidden group ${gridSpan} ${style.border}`;
+
+  // Si tiene URL, renderizamos un enlace interactivo con efecto de elevación sutil
+  if (url) {
+    return (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${commonClassName} hover:-translate-y-1 cursor-pointer`}
+      >
+        {CardContent}
+      </a>
+    );
+  }
+
+  // Si no tiene URL, se renderiza como un div estático normal
+  return (
+    <div className={commonClassName}>
+      {CardContent}
     </div>
   );
 }
+
 export default ProjectCard;

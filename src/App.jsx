@@ -78,7 +78,7 @@ export function App() {
           <main className="w-full relative z-10 flex flex-col items-center gap-12 pb-32">
 
             {/* Overview Section */}
-            <section id="overview" className="section-container min-h-screen">
+            <section id="overview" className="section-container min-h-screen ">
               <Hero />
               <BioTerminal />
               <div className="glowing-connector bottom-[-60px]" />

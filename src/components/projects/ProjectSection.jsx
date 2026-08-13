@@ -39,6 +39,7 @@ export function BentoSection() {
         "Automaticé auditorías de bienes, reduciendo en 40% los tiempos manuales.",
         "Implementé mecanismos de trazabilidad y registro de operaciones por usuario."
       ],
+      url: "https://github.com/JoseRCalles/proyecto-bienes-publicos-hidrofalcon",
       tags: ["PHP", "JavaScript", "HTML5", "CSS3", "MySQL"],
       gridSpan: "col-span-1",
       colorTheme: "yellow",
@@ -104,6 +105,7 @@ export function BentoSection() {
             subtitle={proj.subtitle}
             description={proj.description}
             bullets={proj.bullets}
+            url={proj.url}
             tags={proj.tags}
             gridSpan={proj.gridSpan}
             colorTheme={proj.colorTheme}

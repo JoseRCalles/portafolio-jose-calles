@@ -61,12 +61,6 @@ export function ContactPanel() {
                   <span className="font-bold text-neutral-500">SYS_ENG:</span> J.R. CALLES
                 </div>
                 <div>
-                  <span className="font-bold text-neutral-500">PHONE:</span>{" "}
-                  <a href="tel:+584128566352" className="hover:underline hover:text-purple-600 font-semibold">
-                    +58 412-8566352
-                  </a>
-                </div>
-                <div>
                   <span className="font-bold text-neutral-500">EMAIL:</span>{" "}
                   <a href="mailto:joserafaelcalles@gmail.com" className="hover:underline hover:text-purple-600 font-semibold break-all">
                     joserafaelcalles@gmail.com
