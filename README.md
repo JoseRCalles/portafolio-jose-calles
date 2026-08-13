@@ -7,7 +7,7 @@
 
 Portafolio web interactivo y de alto rendimiento diseñado para exponer mi experiencia como **Ingeniero de Software** (Mobile & Full-Stack). La interfaz combina una estética *Neo-Retro / Cyberpunk minimalista* con componentes *Glassmorphism*, priorizando la experiencia de usuario (UX) y la presentación técnica de proyectos.
 
-🔗 **[Ver Portafolio en Vivo](https://josercalles.github.io/portafolio-jose-calles/)** *(Asegúrate de actualizar este enlace si es distinto)*
+🔗 **[Ver Portafolio en Vivo](https://josercalles.github.io/portafolio-jose-calles/)** 
 
 ---
 
